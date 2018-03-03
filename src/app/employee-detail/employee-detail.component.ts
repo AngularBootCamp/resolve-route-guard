@@ -10,10 +10,10 @@ import { Employee } from '../employee-loader.service';
   templateUrl: './employee-detail.component.html'
 })
 export class EmployeeDetailComponent {
-  employee$: Observable<Employee>;
+  employee: Observable<Employee>;
 
   constructor(route: ActivatedRoute) {
     // String here has to match the string in the resolve config of your route
-    this.employee$ = route.data.pipe(map(data => data['employee']));
+    this.employee = route.data.pipe(map(data => data['employee']));
   }
 }
