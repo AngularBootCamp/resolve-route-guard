@@ -13,6 +13,6 @@ export class EmployeeRetrieverService implements Resolve<Employee> {
     console.log('started retrieving employee');
     return this.loader.getDetails(route.params['employeeId']).pipe(
       delay(3000),  // Simulate backend latency
-      tap(x => console.log('employee information arrived')));
+      tap(x => console.log('employee information arrived', x)));
   }
 }
