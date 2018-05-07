@@ -4,7 +4,9 @@ import { delay, tap } from 'rxjs/operators';
 
 import { EmployeeLoaderService, Employee } from './employee-loader.service';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class EmployeeRetrieverService implements Resolve<Employee> {
 
   constructor(private loader: EmployeeLoaderService) { }

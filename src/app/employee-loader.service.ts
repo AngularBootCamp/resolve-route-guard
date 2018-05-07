@@ -14,7 +14,9 @@ export interface Employee {
 
 const API_URL = 'https://api.angularbootcamp.com';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class EmployeeLoaderService {
   constructor(private http: HttpClient) { }
 
