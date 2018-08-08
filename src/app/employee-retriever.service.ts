@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
 import { delay, tap } from 'rxjs/operators';
 
-import { EmployeeLoaderService, Employee } from './employee-loader.service';
+import { Employee, EmployeeLoaderService } from './employee-loader.service';
 
 @Injectable({
   providedIn: 'root'
