@@ -13,11 +13,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     EmployeeListComponent,
     EmployeeDetailComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
