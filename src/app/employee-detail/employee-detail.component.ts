@@ -14,6 +14,8 @@ export class EmployeeDetailComponent {
 
   constructor(route: ActivatedRoute) {
     // String here has to match the string in the resolve config of your route
-    this.employee = route.data.pipe(map(data => data['employee']));
+    this.employee = route.data.pipe(
+      map(routeData => routeData['employee'])
+    );
   }
 }

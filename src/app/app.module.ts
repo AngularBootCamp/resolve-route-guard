@@ -10,10 +10,10 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeListComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    EmployeeListComponent
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [AppRoutingModule, BrowserModule, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
