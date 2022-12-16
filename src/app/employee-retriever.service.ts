@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
-import { delay, tap } from 'rxjs/operators';
+import { delay, tap } from 'rxjs';
 
 import {
   Employee,
