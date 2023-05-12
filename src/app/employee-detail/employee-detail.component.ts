@@ -5,7 +5,7 @@ import { Observable, map } from 'rxjs';
 import { Employee } from '../employee-loader.service';
 
 @Component({
-  selector: 'employee-detail',
+  selector: 'app-employee-detail',
   templateUrl: './employee-detail.component.html'
 })
 export class EmployeeDetailComponent {

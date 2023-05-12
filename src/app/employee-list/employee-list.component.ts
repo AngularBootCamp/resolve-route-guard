@@ -7,7 +7,7 @@ import {
 } from '../employee-loader.service';
 
 @Component({
-  selector: 'employee-list',
+  selector: 'app-employee-list',
   templateUrl: './employee-list.component.html'
 })
 export class EmployeeListComponent {
