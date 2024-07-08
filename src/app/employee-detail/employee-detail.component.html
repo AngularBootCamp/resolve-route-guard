@@ -1,5 +1,5 @@
 <article>
-  <ng-container *ngIf="employee | async as emp">
+  @if (employee | async; as emp) {
     <header>Name: {{ emp.firstName }} {{ emp.lastName }}</header>
     <p>
       Email:
@@ -15,5 +15,5 @@
     </p>
     <hr />
     <a routerLink="/employees">Back to list</a>
-  </ng-container>
+  }
 </article>

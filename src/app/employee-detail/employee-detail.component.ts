@@ -1,4 +1,4 @@
-import { NgIf, AsyncPipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Observable, map } from 'rxjs';
@@ -9,7 +9,7 @@ import { Employee } from '../employee-loader.service';
   selector: 'app-employee-detail',
   templateUrl: './employee-detail.component.html',
   standalone: true,
-  imports: [NgIf, RouterLink, AsyncPipe]
+  imports: [RouterLink, AsyncPipe]
 })
 export class EmployeeDetailComponent {
   employee: Observable<Employee>;
